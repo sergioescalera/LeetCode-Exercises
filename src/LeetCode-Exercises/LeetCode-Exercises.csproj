@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\ExerciseAttribute.cs" />
     <Compile Include="Exercises\001-TwoSum.cs" />
+    <Compile Include="Exercises\002-AddTwoNumbers.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
+    <Compile Include="Input\ListNode.cs" />
     <Compile Include="Input\TreeNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,8 +54,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Attributes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

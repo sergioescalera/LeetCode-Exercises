@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Attributes;
+using System;
 using System.Linq;
 using System.Reflection;
 
@@ -22,10 +23,11 @@ namespace LeetCode
 
         private static MethodInfo SelectExercise()
         {
+            var exerciseType = typeof(ExerciseAttribute);
             var exercises = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
-                .Where(t => t.Namespace?.EndsWith(".Exercises") == true)
+                .Where(t => t.CustomAttributes.Any(o => o.AttributeType == exerciseType))
                 .ToArray();
 
             Console.WriteLine("-------------------");

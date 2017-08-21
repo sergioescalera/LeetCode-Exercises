@@ -1,8 +1,9 @@
-﻿using LeetCode.Input;
-using System;
+﻿using LeetCode.Attributes;
+using LeetCode.Input;
 
 namespace LeetCode.Exercises
 {
+    [Exercise]
     public static class MergeTwoBinaryTrees
     {
         public static void Run()

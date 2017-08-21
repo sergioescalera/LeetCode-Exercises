@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LeetCode.Attributes;
+using System;
 
 namespace LeetCode.Exercises
 {
+    [Exercise]
     public static class TwoSum
     {
         public static void Run()

@@ -8,7 +8,7 @@ namespace LeetCode.Input
         public TreeNode left;
         public TreeNode right;
 
-        public TreeNode(int val)
+        public TreeNode(Int32 val)
         {
             this.val = val;
         }
@@ -31,6 +31,5 @@ namespace LeetCode.Input
             left?.PrintPretty(indent, last: right == null);
             right?.PrintPretty(indent, last: true);
         }
-
     }
 }
