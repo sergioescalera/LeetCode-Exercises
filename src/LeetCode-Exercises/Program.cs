@@ -25,7 +25,7 @@ namespace LeetCode
             var exercises = Assembly
                 .GetExecutingAssembly()
                 .GetTypes()
-                .Where(t => t.Namespace.EndsWith(".Exercises"))
+                .Where(t => t.Namespace?.EndsWith(".Exercises") == true)
                 .ToArray();
 
             Console.WriteLine("-------------------");
