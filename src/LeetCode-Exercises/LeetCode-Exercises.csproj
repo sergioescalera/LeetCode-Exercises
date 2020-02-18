@@ -45,6 +45,7 @@
     <Compile Include="Attributes\ExerciseAttribute.cs" />
     <Compile Include="Exercises\001-TwoSum.cs" />
     <Compile Include="Exercises\002-AddTwoNumbers.cs" />
+    <Compile Include="Exercises\009-PalindromeNumber.cs" />
     <Compile Include="Exercises\007-ReverseInteger.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Input\ListNode.cs" />
