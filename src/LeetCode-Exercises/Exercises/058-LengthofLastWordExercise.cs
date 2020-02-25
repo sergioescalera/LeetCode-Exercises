@@ -17,7 +17,7 @@ namespace LeetCode.Exercises
             if (String.IsNullOrWhiteSpace(s))
                 return 0;
 
-            var nonEmpty = 0;
+            var nonEmpty = -1;
 
             for (int i = s.Length - 1; i >= 0; i--)
             {
@@ -28,13 +28,13 @@ namespace LeetCode.Exercises
                     return nonEmpty - i;
                 }
 
-                if (nonEmpty == 0 && c != ' ')
+                if (nonEmpty == -1 && c != ' ')
                 {
                     nonEmpty = i;
                 }
             }
 
-            return nonEmpty > 0 ? nonEmpty + 1 : 0;
+            return nonEmpty >= 0 ? nonEmpty + 1 : 0;
         }
     }
 }
