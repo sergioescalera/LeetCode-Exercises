@@ -54,6 +54,7 @@
     <Compile Include="Exercises\026-RemoveDuplicatesSortedArray.cs" />
     <Compile Include="Exercises\027-RemoveElement.cs" />
     <Compile Include="Exercises\028-ImplementStrStr.cs" />
+    <Compile Include="Exercises\058-LengthofLastWordExercise.cs" />
     <Compile Include="Exercises\035-SearchInsertPosition.cs" />
     <Compile Include="Exercises\053-MaximumSubarray.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
