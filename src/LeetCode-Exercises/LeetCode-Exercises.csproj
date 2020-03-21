@@ -60,6 +60,7 @@
     <Compile Include="Exercises\053-MaximumSubarray.cs" />
     <Compile Include="Exercises\067-AddBinary.cs" />
     <Compile Include="Exercises\069-SqrtExercise.cs" />
+    <Compile Include="Exercises\070-ClimbingStairs.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Extensions\ExerciseExtensions.cs" />
     <Compile Include="Input\ListNode.cs" />
