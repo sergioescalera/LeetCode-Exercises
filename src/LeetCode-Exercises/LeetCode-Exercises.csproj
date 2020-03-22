@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Exercises\011.ContainerWithMostWater.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
