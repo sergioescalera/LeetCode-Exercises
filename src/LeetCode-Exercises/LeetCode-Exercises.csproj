@@ -47,6 +47,7 @@
     <Compile Include="Exercises\002-AddTwoNumbers.cs" />
     <Compile Include="Exercises\005-LongestPalindromicSubstring.cs" />
     <Compile Include="Exercises\006-ZigZagConversion.cs" />
+    <Compile Include="Exercises\008-StringToInt.cs" />
     <Compile Include="Exercises\009-PalindromeNumber.cs" />
     <Compile Include="Exercises\007-ReverseInteger.cs" />
     <Compile Include="Exercises\013-RomanToInt.cs" />
