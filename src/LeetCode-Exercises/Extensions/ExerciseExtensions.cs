@@ -5,9 +5,9 @@ namespace LeetCode.Extensions
 {
     public static class ExerciseExtensions
     {
-        public static Int32? ReadNum(this Object obj)
+        public static Int32? ReadNum(this Object obj, String prompt = null)
         {
-            Console.WriteLine("Enter number...");
+            Console.WriteLine(prompt ?? "Enter number...");
 
             var line = Console.ReadLine();
 
