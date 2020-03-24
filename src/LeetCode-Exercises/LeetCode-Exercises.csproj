@@ -50,6 +50,7 @@
     <Compile Include="Exercises\008-StringToInt.cs" />
     <Compile Include="Exercises\009-PalindromeNumber.cs" />
     <Compile Include="Exercises\007-ReverseInteger.cs" />
+    <Compile Include="Exercises\012-IntegerToRoman.cs" />
     <Compile Include="Exercises\013-RomanToInt.cs" />
     <Compile Include="Exercises\014-LongestCommonPrefix.cs" />
     <Compile Include="Exercises\020-ValidParentheses.cs" />
