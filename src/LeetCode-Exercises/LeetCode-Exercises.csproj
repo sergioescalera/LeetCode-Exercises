@@ -54,6 +54,7 @@
     <Compile Include="Exercises\013-RomanToInt.cs" />
     <Compile Include="Exercises\014-LongestCommonPrefix.cs" />
     <Compile Include="Exercises\015-ThreeSum.cs" />
+    <Compile Include="Exercises\017-LetterCombinationsPhoneNumbe.cs" />
     <Compile Include="Exercises\020-ValidParentheses.cs" />
     <Compile Include="Exercises\021-MergeTwoSortedLists.cs" />
     <Compile Include="Exercises\026-RemoveDuplicatesSortedArray.cs" />
