@@ -58,6 +58,7 @@
     <Compile Include="Exercises\019-RemoveNthNodeFromEndList.cs" />
     <Compile Include="Exercises\020-ValidParentheses.cs" />
     <Compile Include="Exercises\021-MergeTwoSortedLists.cs" />
+    <Compile Include="Exercises\022-GenerateParentheses.cs" />
     <Compile Include="Exercises\026-RemoveDuplicatesSortedArray.cs" />
     <Compile Include="Exercises\027-RemoveElement.cs" />
     <Compile Include="Exercises\028-ImplementStrStr.cs" />
