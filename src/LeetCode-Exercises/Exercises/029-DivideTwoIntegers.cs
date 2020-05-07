@@ -51,7 +51,7 @@ namespace LeetCode.Exercises
                 return 0 - dividend;
             }
 
-            var s = (dividend < 0 && divisor < 0) || (dividend > 0 && divisor > 0);
+            var negative = dividend < 0 ^ divisor < 0;
 
             var a = dividend > 0 ? 0 - dividend : dividend;
             var b = divisor > 0 ? 0 - divisor : divisor;
@@ -63,13 +63,13 @@ namespace LeetCode.Exercises
                 c += b;
             }
 
-            if (s)
+            if (negative)
             {
-                return c < a ? i - 1 : i;
+                return 0 - (c < a ? i - 1 : i);
             }
             else
             {
-                return 0 - (c < a ? i - 1 : i);
+                return c < a ? i - 1 : i; 
             }
         }
     }
