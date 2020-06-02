@@ -69,6 +69,7 @@
     <Compile Include="Exercises\058-LengthofLastWordExercise.cs" />
     <Compile Include="Exercises\035-SearchInsertPosition.cs" />
     <Compile Include="Exercises\053-MaximumSubarray.cs" />
+    <Compile Include="Exercises\066-PlusOne.cs" />
     <Compile Include="Exercises\067-AddBinary.cs" />
     <Compile Include="Exercises\069-SqrtExercise.cs" />
     <Compile Include="Exercises\070-ClimbingStairs.cs" />
