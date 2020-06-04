@@ -67,6 +67,7 @@
     <Compile Include="Exercises\031-NextPermutation.cs" />
     <Compile Include="Exercises\033-SearchRotatedSortedArray.cs" />
     <Compile Include="Exercises\034-FindFirstAndLastPositionOfElem.cs" />
+    <Compile Include="Exercises\036-ValidSudoku.cs" />
     <Compile Include="Exercises\058-LengthofLastWordExercise.cs" />
     <Compile Include="Exercises\035-SearchInsertPosition.cs" />
     <Compile Include="Exercises\053-MaximumSubarray.cs" />
