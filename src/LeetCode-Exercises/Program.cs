@@ -28,6 +28,7 @@ namespace LeetCode
                 .GetExecutingAssembly()
                 .GetTypes()
                 .Where(t => t.CustomAttributes.Any(o => o.AttributeType == exerciseType))
+                .OrderBy(t => t.Name)
                 .ToArray();
 
             Console.WriteLine("-------------------");
