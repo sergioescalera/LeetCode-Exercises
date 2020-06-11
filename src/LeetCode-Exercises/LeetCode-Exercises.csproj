@@ -72,6 +72,7 @@
     <Compile Include="Exercises\046-Permutations.cs" />
     <Compile Include="Exercises\048-RotateImage.cs" />
     <Compile Include="Exercises\049-GroupAnagrams.cs" />
+    <Compile Include="Exercises\050-Pow.cs" />
     <Compile Include="Exercises\058-LengthofLastWordExercise.cs" />
     <Compile Include="Exercises\035-SearchInsertPosition.cs" />
     <Compile Include="Exercises\053-MaximumSubarray.cs" />

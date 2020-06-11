@@ -5,6 +5,20 @@ namespace LeetCode.Extensions
 {
     public static class ExerciseExtensions
     {
+        public static Double? ReadDouble(this Object obj, String prompt = null)
+        {
+            Console.WriteLine(prompt ?? "Enter number...");
+
+            var line = Console.ReadLine();
+
+            if (Double.TryParse(line, out var n))
+            {
+                return n;
+            }
+
+            return null;
+        }
+
         public static Int32? ReadNum(this Object obj, String prompt = null)
         {
             Console.WriteLine(prompt ?? "Enter number...");
