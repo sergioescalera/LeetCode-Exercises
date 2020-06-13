@@ -96,6 +96,7 @@
     <None Include="App.config" />
     <Compile Include="Exercises\011.ContainerWithMostWater.cs" />
     <Compile Include="Exercises\043-MultiplyStrings.cs" />
+    <Compile Include="Exercises\059-SpiralMatrix2.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
