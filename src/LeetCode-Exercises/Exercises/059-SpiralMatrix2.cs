@@ -34,7 +34,6 @@ namespace LeetCode.Exercises
                 m[i] = new int[n];
             }
 
-            var x = 0; var y = 0;
             var layers = n / 2;
             var counter = 1;
 
