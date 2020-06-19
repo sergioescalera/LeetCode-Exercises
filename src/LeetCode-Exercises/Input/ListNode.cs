@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace LeetCode.Input
 {
+    [DebuggerDisplay("{val}")]
     public class ListNode
     {
         public Int32 val;
         public ListNode next;
+
+        public ListNode()
+        {
+        }
 
         public ListNode(Int32 val)
         {
