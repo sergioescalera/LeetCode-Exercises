@@ -63,5 +63,50 @@ namespace LeetCode.Exercises
 
             return value;
         }
+
+        public int UniquePathsWithObstacles(int[][] obstacleGrid)
+        {
+            if (obstacleGrid == null)
+            {
+                throw new ArgumentNullException(nameof(obstacleGrid));
+            }
+
+            return UniquePathsWithObstacles(obstacleGrid, 0, 0, new Dictionary<string, int>());
+        }
+
+        private int UniquePathsWithObstacles(
+            int[][] obstacleGrid,
+            int x,
+            int y,
+            Dictionary<string, int> cache)
+        {
+            var m = obstacleGrid.Length - x;
+            var n = obstacleGrid[0].Length - y;
+
+            if (m < 1 || n < 1)
+            {
+                return 0;
+            }
+
+            if (m == 1 && n == 1)
+            {
+                return obstacleGrid[x][y] == 0 ? 1 : 0;
+            }
+
+            var key = $"{m},{n}";
+
+            if (cache.ContainsKey(key))
+            {
+                return cache[key];
+            }
+
+            var value = obstacleGrid[x][y] == 0 ?
+                UniquePathsWithObstacles(obstacleGrid, x + 1, y, cache) +
+                UniquePathsWithObstacles(obstacleGrid, x, y + 1, cache) : 0;
+
+            cache.Add(key, value);
+
+            return value;
+        }
     }
 }
