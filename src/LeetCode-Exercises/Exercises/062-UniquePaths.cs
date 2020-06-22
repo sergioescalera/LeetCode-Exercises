@@ -1,9 +1,9 @@
 ﻿using LeetCode.Attributes;
+using LeetCode.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace LeetCode.Extensions
+namespace LeetCode.Exercises
 {
     [Exercise]
     public class UniquePathsExercise

@@ -1,13 +1,8 @@
 ﻿using LeetCode.Attributes;
 using LeetCode.Input;
 using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LeetCode.Extensions
+namespace LeetCode.Exercises
 {
     [Exercise]
     public class RotateList
