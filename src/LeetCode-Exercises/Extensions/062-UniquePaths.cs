@@ -1,6 +1,7 @@
 ﻿using LeetCode.Attributes;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Extensions
 {
@@ -49,7 +50,7 @@ namespace LeetCode.Extensions
                 return 1;
             }
 
-            var key = $"{m},{n}";
+            var key = m > n ? $"{n},{m}" : $"{m},{n}";
 
             if (cache.ContainsKey(key))
             {
