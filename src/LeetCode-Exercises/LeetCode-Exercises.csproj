@@ -88,6 +88,7 @@
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Extensions\061-RotateList.cs" />
+    <Compile Include="Extensions\062-UniquePaths.cs" />
     <Compile Include="Extensions\ExerciseExtensions.cs" />
     <Compile Include="Input\ListNode.cs" />
     <Compile Include="Input\TreeNode.cs" />
