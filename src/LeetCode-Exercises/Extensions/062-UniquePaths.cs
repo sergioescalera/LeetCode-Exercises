@@ -9,7 +9,25 @@ namespace LeetCode.Extensions
     {
         public static void Run()
         {
+            var exercise = new UniquePathsExercise();
 
+            do
+            {
+                var m = exercise.ReadNum();
+
+                if (m == null)
+                    break;
+
+                var n = exercise.ReadNum();
+
+                if (n == null)
+                    break;
+
+                var x = exercise.UniquePaths(m.Value, n.Value);
+
+                Console.WriteLine("{0}x{1}={2}", m, n, x);
+
+            } while (true);
         }
 
         Dictionary<string, int> cache = new Dictionary<string, int>();
