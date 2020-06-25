@@ -85,6 +85,7 @@
     <Compile Include="Exercises\067-AddBinary.cs" />
     <Compile Include="Exercises\069-SqrtExercise.cs" />
     <Compile Include="Exercises\070-ClimbingStairs.cs" />
+    <Compile Include="Exercises\073-SetMatrixZeroes.cs" />
     <Compile Include="Exercises\083-RemoveSortedListDuplicates.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
