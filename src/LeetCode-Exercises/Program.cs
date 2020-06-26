@@ -9,6 +9,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.White;
+
             do
             {
                 var exercise = SelectExercise();
@@ -35,12 +37,16 @@ namespace LeetCode
             Console.WriteLine("Select an exercise:");
             Console.WriteLine();
 
+            Console.ForegroundColor = ConsoleColor.Green;
+
             for (var i = 0; i < exercises.Length; i++)
             {
                 var exercise = exercises[i];
 
                 Console.WriteLine($"{i} - {exercise.Name}");
             }
+
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine();
 
