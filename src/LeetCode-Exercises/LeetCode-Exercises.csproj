@@ -87,7 +87,10 @@
     <Compile Include="Exercises\070-ClimbingStairs.cs" />
     <Compile Include="Exercises\073-SetMatrixZeroes.cs" />
     <Compile Include="Exercises\074-Search2DMatrix.cs" />
+    <Compile Include="Exercises\075-SortColors.cs" />
     <Compile Include="Exercises\083-RemoveSortedListDuplicates.cs" />
+    <Compile Include="Exercises\086-PartitionList.cs" />
+    <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Exercises\061-RotateList.cs" />
