@@ -93,6 +93,7 @@
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\155-MinStack.cs" />
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
+    <Compile Include="Exercises\232-ImplementQueueWithStacks.cs" />
     <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
