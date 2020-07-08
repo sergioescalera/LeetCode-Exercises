@@ -4,13 +4,15 @@ namespace LeetCode.Input
 {
     public class TreeNode
     {
-        public Int32 val;
+        public int val;
         public TreeNode left;
         public TreeNode right;
 
-        public TreeNode(Int32 val)
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
         {
             this.val = val;
+            this.left = left;
+            this.right = right;
         }
 
         public void PrintPretty(String indent = "", Boolean last = true)

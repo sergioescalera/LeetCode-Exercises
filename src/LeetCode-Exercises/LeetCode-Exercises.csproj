@@ -90,6 +90,7 @@
     <Compile Include="Exercises\075-SortColors.cs" />
     <Compile Include="Exercises\083-RemoveSortedListDuplicates.cs" />
     <Compile Include="Exercises\086-PartitionList.cs" />
+    <Compile Include="Exercises\110-BalancedBinaryTree.cs" />
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\155-MinStack.cs" />
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
