@@ -96,6 +96,7 @@
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
     <Compile Include="Exercises\232-ImplementQueueWithStacks.cs" />
     <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
+    <Compile Include="Exercises\236-LowestCommonAncestorBinaryTree.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
