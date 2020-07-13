@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace LeetCode.Input
 {
-    [DebuggerDisplay("{val}")]
+    [DebuggerDisplay("{val} -> {next}")]
     public class ListNode
     {
         public Int32 val;
