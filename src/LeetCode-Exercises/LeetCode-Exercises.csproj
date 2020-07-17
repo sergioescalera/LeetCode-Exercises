@@ -96,6 +96,7 @@
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\1344-AngleBetweenHandsClock.cs" />
     <Compile Include="Exercises\148-SortList.cs" />
+    <Compile Include="Exercises\151-ReverseWordsString.cs" />
     <Compile Include="Exercises\155-MinStack.cs" />
     <Compile Include="Exercises\190-ReverseBits.cs" />
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
     <Compile Include="Exercises\236-LowestCommonAncestorBinaryTree.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
+    <Compile Include="Exercises\347-TopFrequentElements.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Exercises\061-RotateList.cs" />
