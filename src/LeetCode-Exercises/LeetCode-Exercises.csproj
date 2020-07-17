@@ -107,6 +107,7 @@
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\347-TopFrequentElements.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
+    <Compile Include="Exercises\437-PathSum.cs" />
     <Compile Include="Exercises\572-SubtreeAnotherTree.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Exercises\061-RotateList.cs" />

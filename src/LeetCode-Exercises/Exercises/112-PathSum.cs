@@ -6,7 +6,7 @@ using System.Linq;
 namespace LeetCode.Exercises
 {
     [Exercise]
-    public class PathSum
+    public class PathSumExercise
     {
         public static void Run()
         {
@@ -30,6 +30,18 @@ namespace LeetCode.Exercises
                 return true;
 
             return left == null && right == null && root.val == sum;
+        }
+
+        public int PathSum(TreeNode root, int sum)
+        {
+            if (root == null)
+                return 0;
+
+            var left = GetSums(root.left) ?? Enumerable.Empty<int>();
+
+            var right = GetSums(root.right) ?? Enumerable.Empty<int>();
+
+            return left.Union(right).Count(o => o + root.val == sum);
         }
 
         private IEnumerable<int> GetSums(TreeNode node)
