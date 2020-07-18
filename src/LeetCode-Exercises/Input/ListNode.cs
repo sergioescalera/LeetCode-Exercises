@@ -9,13 +9,10 @@ namespace LeetCode.Input
         public Int32 val;
         public ListNode next;
 
-        public ListNode()
-        {
-        }
-
-        public ListNode(Int32 val)
+        public ListNode(Int32 val = 0, ListNode next = null)
         {
             this.val = val;
+            this.next = next;
         }
 
         public void PrintPretty()
