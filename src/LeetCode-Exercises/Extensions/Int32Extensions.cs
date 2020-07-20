@@ -22,7 +22,6 @@ namespace LeetCode.Extensions
             return n & ~(1 << i);
         }
 
-
         public static Int32 ClearBitsLeft(this Int32 n, Int32 i)
         {
             return n & ((1 << i) - 1);

@@ -100,6 +100,7 @@
     <Compile Include="Exercises\151-ReverseWordsString.cs" />
     <Compile Include="Exercises\155-MinStack.cs" />
     <Compile Include="Exercises\190-ReverseBits.cs" />
+    <Compile Include="Exercises\191-Numberof1Bits.cs" />
     <Compile Include="Exercises\210-CourseScheduleII.cs" />
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
     <Compile Include="Exercises\232-ImplementQueueWithStacks.cs" />
