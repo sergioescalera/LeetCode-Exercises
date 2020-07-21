@@ -118,6 +118,7 @@
     <Compile Include="Exercises\062-UniquePaths.cs" />
     <Compile Include="Exercises\071-SimplifyPath.cs" />
     <Compile Include="Exercises\662-MaximumWidthBinaryTree.cs" />
+    <Compile Include="Exercises\79-WordSearch.cs" />
     <Compile Include="Exercises\815-BusRoutes.cs" />
     <Compile Include="Extensions\ExerciseExtensions.cs" />
     <Compile Include="Extensions\Int32Extensions.cs" />
