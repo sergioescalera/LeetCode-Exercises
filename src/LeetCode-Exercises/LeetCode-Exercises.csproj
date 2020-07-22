@@ -92,6 +92,7 @@
     <Compile Include="Exercises\083-RemoveSortedListDuplicates.cs" />
     <Compile Include="Exercises\086-PartitionList.cs" />
     <Compile Include="Exercises\100-SameTree.cs" />
+    <Compile Include="Exercises\103-BinaryTreeZigzagLevelOrderTraversal.cs" />
     <Compile Include="Exercises\110-BalancedBinaryTree.cs" />
     <Compile Include="Exercises\112-PathSum.cs" />
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
