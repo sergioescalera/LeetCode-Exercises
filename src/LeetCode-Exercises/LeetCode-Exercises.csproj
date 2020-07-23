@@ -108,6 +108,8 @@
     <Compile Include="Exercises\232-ImplementQueueWithStacks.cs" />
     <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
     <Compile Include="Exercises\236-LowestCommonAncestorBinaryTree.cs" />
+    <Compile Include="Exercises\136-SingleNumber.cs" />
+    <Compile Include="Exercises\260-SingleNumber.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\347-TopFrequentElements.cs" />
     <Compile Include="Exercises\382-LinkedListRandomNode.cs" />
