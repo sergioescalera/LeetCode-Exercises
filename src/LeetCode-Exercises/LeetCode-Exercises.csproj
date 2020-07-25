@@ -100,6 +100,8 @@
     <Compile Include="Exercises\137-SingleNumberII.cs" />
     <Compile Include="Exercises\148-SortList.cs" />
     <Compile Include="Exercises\151-ReverseWordsString.cs" />
+    <Compile Include="Exercises\153-FindMinimumRotatedSortedArray.cs" />
+    <Compile Include="Exercises\154-FindMinimumRotatedSortedArrayII.cs" />
     <Compile Include="Exercises\155-MinStack.cs" />
     <Compile Include="Exercises\190-ReverseBits.cs" />
     <Compile Include="Exercises\191-Numberof1Bits.cs" />
