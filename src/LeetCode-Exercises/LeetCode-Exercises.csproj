@@ -112,6 +112,7 @@
     <Compile Include="Exercises\234-PalindromeLinkedList.cs" />
     <Compile Include="Exercises\236-LowestCommonAncestorBinaryTree.cs" />
     <Compile Include="Exercises\136-SingleNumber.cs" />
+    <Compile Include="Exercises\258-AddDigits.cs" />
     <Compile Include="Exercises\260-SingleNumber.cs" />
     <Compile Include="Exercises\278-FirstBadVersion.cs" />
     <Compile Include="Exercises\347-TopFrequentElements.cs" />
