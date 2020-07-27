@@ -57,6 +57,7 @@ namespace LeetCode.Exercises
                 0,
                 inorder.Length - 1,
                 postorder, 
+                0,
                 postorder.Length - 1);
         }
 
@@ -65,6 +66,7 @@ namespace LeetCode.Exercises
             int start,
             int end, 
             int[] postorder,
+            int postStart,
             int postEnd)
         {
             if (start > end)
@@ -72,34 +74,41 @@ namespace LeetCode.Exercises
                 return null;
             }
 
-            if (start == end)
-            {
-                return new TreeNode(inorder[start]);
-            }
-
             var value = postorder[postEnd];
 
-            var index = FindNode(inorder, value, start, end);
+            var index = FindNode(inorder, start, end, v => v == value);
+
+            var postLeft = postEnd - 1;
+
+            while (FindNode(inorder, start, index - 1, v => v == postorder[postLeft]) < 0
+                && postLeft > 0)
+            {
+                postLeft--;
+            }
+
+            var left = BuildTree(inorder, start, index - 1, postorder, postStart, postLeft);
+
+            var right = BuildTree(inorder, index + 1, end, postorder, postLeft + 1, postEnd - 1);
 
             var root = new TreeNode(
                 value, 
-                left: BuildTree(inorder, start, index - 1, postorder, postEnd - 1), 
-                right: BuildTree(inorder, index + 1, end, postorder, postEnd - 1));
+                left: left, 
+                right: right);
 
             return root;
         }
 
-        private int FindNode(int[] inorder, int val, int start, int end)
+        private int FindNode(int[] inorder, int start, int end, Func<int, bool> func)
         {
             for (int i = start; i <= end; i++)
             {
-                if (inorder[i] == val)
+                if (func(inorder[i]))
                 {
                     return i;
                 }
             }
 
-            throw new InvalidOperationException();
+            return -1;
         }
     }
 }
