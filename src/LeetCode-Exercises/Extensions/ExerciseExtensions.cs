@@ -34,9 +34,9 @@ namespace LeetCode.Extensions
             return null;
         }
 
-        public static Int32[] ReadNums(this Object obj)
+        public static Int32[] ReadNums(this Object obj, String prompt = null)
         {
-            Console.WriteLine("Enter numbers...");
+            Console.WriteLine(prompt ?? "Enter numbers...");
 
             var line = Console.ReadLine();
 
