@@ -126,6 +126,7 @@
     <Compile Include="Exercises\061-RotateList.cs" />
     <Compile Include="Exercises\062-UniquePaths.cs" />
     <Compile Include="Exercises\071-SimplifyPath.cs" />
+    <Compile Include="Exercises\621-TaskScheduler.cs" />
     <Compile Include="Exercises\662-MaximumWidthBinaryTree.cs" />
     <Compile Include="Exercises\79-WordSearch.cs" />
     <Compile Include="Exercises\797-AllPathsFromSourceTarget.cs" />
