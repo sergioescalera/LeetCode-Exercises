@@ -100,6 +100,7 @@
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\1344-AngleBetweenHandsClock.cs" />
     <Compile Include="Exercises\137-SingleNumberII.cs" />
+    <Compile Include="Exercises\140-WordBreakII.cs" />
     <Compile Include="Exercises\148-SortList.cs" />
     <Compile Include="Exercises\151-ReverseWordsString.cs" />
     <Compile Include="Exercises\153-FindMinimumRotatedSortedArray.cs" />
