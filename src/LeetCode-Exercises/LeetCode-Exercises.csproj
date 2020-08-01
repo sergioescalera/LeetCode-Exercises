@@ -124,6 +124,7 @@
     <Compile Include="Exercises\382-LinkedListRandomNode.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
     <Compile Include="Exercises\437-PathSum.cs" />
+    <Compile Include="Exercises\520-DetectCapital.cs" />
     <Compile Include="Exercises\572-SubtreeAnotherTree.cs" />
     <Compile Include="Exercises\617-MergeTwoBinaryTrees.cs" />
     <Compile Include="Exercises\061-RotateList.cs" />
