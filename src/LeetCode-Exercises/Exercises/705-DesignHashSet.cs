@@ -52,9 +52,9 @@ namespace LeetCode.Exercises
         /// <param name="key"></param>
         public void Remove(int key)
         {
-            var list = FindOrCreateList(key);
+            var list = FindOrCreateList(key, create: false);
 
-            if (list.Contains(key) == false)
+            if (list == null || list.Contains(key) == false)
             {
                 return;
             }
