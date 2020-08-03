@@ -98,6 +98,7 @@
     <Compile Include="Exercises\110-BalancedBinaryTree.cs" />
     <Compile Include="Exercises\112-PathSum.cs" />
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
+    <Compile Include="Exercises\125-ValidPalindrome.cs" />
     <Compile Include="Exercises\1344-AngleBetweenHandsClock.cs" />
     <Compile Include="Exercises\137-SingleNumberII.cs" />
     <Compile Include="Exercises\139-WordBreak.cs" />
