@@ -33,11 +33,16 @@ namespace LeetCode.Exercises
                 return false;
             }
 
+            if (num == 1)
+            {
+                return true;
+            }
+
             var log = Math.Log(num, 4);
 
-            var ceil = Math.Ceiling(log);
+            var floor = Math.Floor(log);
 
-            return ceil == num;
+            return floor == log;
         }
     }
 }
