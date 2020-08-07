@@ -62,5 +62,34 @@ namespace LeetCode.Exercises
 
             return dupes;
         }
+
+        public IList<int> FindDuplicates2(int[] nums)
+        {
+            if (nums == null)
+            {
+                throw new ArgumentNullException(nameof(nums));
+            }
+
+            var bits = 0;
+
+            var dupes = new List<int>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var n = nums[i];
+                
+                if (n <= 0 || n > nums.Length)
+                {
+                    throw new ArgumentException();
+                }
+
+                if (bits ^ n == bits)
+                {
+
+                }
+            }
+
+            return dupes;
+        }
     }
 }
