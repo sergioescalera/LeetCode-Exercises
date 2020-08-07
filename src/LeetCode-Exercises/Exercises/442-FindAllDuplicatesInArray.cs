@@ -1,6 +1,7 @@
 ﻿using LeetCode.Attributes;
 using LeetCode.Extensions;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 
 namespace LeetCode.Exercises
@@ -27,7 +28,7 @@ namespace LeetCode.Exercises
             } while (true);
         }
 
-        public IList<int> FindDuplicates(int[] nums)
+        public IList<int> FindDuplicates2(int[] nums)
         {
             if (nums == null)
             {
@@ -63,29 +64,45 @@ namespace LeetCode.Exercises
             return dupes;
         }
 
-        public IList<int> FindDuplicates2(int[] nums)
+        public IList<int> FindDuplicates(int[] nums)
         {
+
             if (nums == null)
             {
                 throw new ArgumentNullException(nameof(nums));
             }
 
-            var bits = 0;
+            Console.WriteLine(nums.Length);
 
             var dupes = new List<int>();
+            var count = nums.Length;
+            var bits = new int[count / 32 + (count % 32 == 0 ? 0 : 1)];
 
             for (int i = 0; i < nums.Length; i++)
             {
-                var n = nums[i];
-                
-                if (n <= 0 || n > nums.Length)
+                var value = nums[i];
+
+                if (value <= 0 || value > nums.Length)
                 {
                     throw new ArgumentException();
                 }
 
-                if (bits ^ n == bits)
+                if (value / 32 < 0 || value / 32 >= bits.Length)
                 {
+                    Console.WriteLine(value);
+                }
 
+                var x = (value - 1) / 32;
+                var n = bits[x];
+                var y = (value - 1) % 32;
+
+                if (n.GetBit(y))
+                {
+                    dupes.Add(value);
+                }
+                else
+                {
+                    bits[x] = n.SetBit(y);
                 }
             }
 
