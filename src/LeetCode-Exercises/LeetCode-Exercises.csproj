@@ -97,6 +97,7 @@
     <Compile Include="Exercises\106-ConstructBinaryTreeInorderPostorderTraversal.cs" />
     <Compile Include="Exercises\110-BalancedBinaryTree.cs" />
     <Compile Include="Exercises\112-PathSum.cs" />
+    <Compile Include="Exercises\113-PathSumII.cs" />
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\125-ValidPalindrome.cs" />
     <Compile Include="Exercises\1344-AngleBetweenHandsClock.cs" />
