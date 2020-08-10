@@ -141,6 +141,7 @@
     <Compile Include="Exercises\79-WordSearch.cs" />
     <Compile Include="Exercises\797-AllPathsFromSourceTarget.cs" />
     <Compile Include="Exercises\815-BusRoutes.cs" />
+    <Compile Include="Exercises\994-RottingOranges.cs" />
     <Compile Include="Extensions\ExerciseExtensions.cs" />
     <Compile Include="Extensions\Int32Extensions.cs" />
     <Compile Include="Input\ListNode.cs" />
