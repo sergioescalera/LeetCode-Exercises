@@ -115,6 +115,7 @@
     <Compile Include="Exercises\203-RemoveLinkedListElements.cs" />
     <Compile Include="Exercises\210-CourseScheduleII.cs" />
     <Compile Include="Exercises\225-ImplementStackWithQueues.cs" />
+    <Compile Include="Exercises\274-H-Index.cs" />
     <Compile Include="Exercises\342-PowerOfFour.cs" />
     <Compile Include="Exercises\231-PowerOfTwo.cs" />
     <Compile Include="Exercises\232-ImplementQueueWithStacks.cs" />
