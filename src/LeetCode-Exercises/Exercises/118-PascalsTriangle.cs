@@ -1,16 +1,17 @@
-﻿using LeetCode.Extensions;
+﻿using LeetCode.Attributes;
+using LeetCode.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Attributes
+namespace LeetCode.Exercisesd
 {
     [Exercise]
-    public class PascalsTriangleII
+    public class PascalsTriangle
     {
         public static void Run()
         {
-            var ex = new PascalsTriangleII();
+            var ex = new PascalsTriangle();
 
             do
             {
