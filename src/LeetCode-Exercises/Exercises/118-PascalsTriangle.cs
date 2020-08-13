@@ -22,7 +22,7 @@ namespace LeetCode.Exercisesd
                     break;
                 }
 
-                var list = ex.GetRow(n.Value);
+                var list = ex.Generate(n.Value);
                 
                 foreach (var row in list)
                 {
@@ -33,9 +33,7 @@ namespace LeetCode.Exercisesd
             } while (true);
         }
 
-        static IDictionary<int, IList<int>> cache = new Dictionary<int, IList<int>>();
-
-        public IList<IList<int>> GetRow(int rowIndex)
+        public IList<IList<int>> Generate(int rowIndex)
         {
             if (rowIndex < 0)
             {
@@ -44,15 +42,15 @@ namespace LeetCode.Exercisesd
 
             if (rowIndex == 0)
             {
+                return new List<IList<int>> { };
+            }
+
+            if (rowIndex == 1)
+            {
                 return new List<IList<int>> { new[] { 1 } };
             }
 
-            if (cache.ContainsKey(rowIndex))
-            {
-                return cache.Values.ToList();
-            }
-
-            var list = GetRow(rowIndex - 1);
+            var list = Generate(rowIndex - 1);
 
             var previousRow = list.Last();
 
@@ -73,8 +71,6 @@ namespace LeetCode.Exercisesd
                     row[i] = previousRow[i - 1] + previousRow[i];
                 }
             }
-
-            cache.Add(rowIndex, row);
 
             list.Add(row);
 
