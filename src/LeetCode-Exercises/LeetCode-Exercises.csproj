@@ -102,6 +102,7 @@
     <Compile Include="Exercises\113-PathSumII.cs" />
     <Compile Include="Exercises\1172-DinnerPlateStacks.cs" />
     <Compile Include="Exercises\125-ValidPalindrome.cs" />
+    <Compile Include="Exercises\1286-IteratorForCombination.cs" />
     <Compile Include="Exercises\1344-AngleBetweenHandsClock.cs" />
     <Compile Include="Exercises\137-SingleNumberII.cs" />
     <Compile Include="Exercises\139-WordBreak.cs" />
