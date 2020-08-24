@@ -5,41 +5,39 @@ namespace LeetCode.Exercises
 {
     public class PrintInOrder
     {
-
-    }
-
-    public class Foo
-    {
-        private CountdownEvent cd1;
-        private CountdownEvent cd2;
-
-        public Foo()
+        public class Foo
         {
-            cd1 = new CountdownEvent(1);
-            cd2 = new CountdownEvent(1);
-        }
+            private CountdownEvent cd1;
+            private CountdownEvent cd2;
 
-        public void First(Action printFirst)
-        {
-            printFirst();
+            public Foo()
+            {
+                cd1 = new CountdownEvent(1);
+                cd2 = new CountdownEvent(1);
+            }
 
-            cd1.Signal();
-        }
+            public void First(Action printFirst)
+            {
+                printFirst();
 
-        public void Second(Action printSecond)
-        {
-            cd1.Wait();
+                cd1.Signal();
+            }
 
-            printSecond();
+            public void Second(Action printSecond)
+            {
+                cd1.Wait();
 
-            cd2.Signal();
-        }
+                printSecond();
 
-        public void Third(Action printThird)
-        {
-            cd2.Wait();
+                cd2.Signal();
+            }
 
-            printThird();
+            public void Third(Action printThird)
+            {
+                cd2.Wait();
+
+                printThird();
+            }
         }
     }
 }
