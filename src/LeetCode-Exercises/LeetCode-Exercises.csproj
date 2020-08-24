@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exercises\1103-DistributeCandiesToPeople.cs" />
+    <Compile Include="Exercises\1114-PrintInOrder.cs" />
     <Compile Include="Exercises\143-ReorderList.cs" />
     <Compile Include="Exercises\404-SumLeftLeaves.cs" />
     <Compile Include="Exercises\409-LongestPalindrome.cs" />
