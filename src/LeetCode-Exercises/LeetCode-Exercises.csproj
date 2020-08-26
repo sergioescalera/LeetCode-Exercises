@@ -137,6 +137,7 @@
     <Compile Include="Exercises\309-BestTimeBuySellStockCooldown.cs" />
     <Compile Include="Exercises\347-TopFrequentElements.cs" />
     <Compile Include="Exercises\382-LinkedListRandomNode.cs" />
+    <Compile Include="Exercises\412-FizzBuzz.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
     <Compile Include="Exercises\435-NonOverlappingIntervals.cs" />
     <Compile Include="Exercises\437-PathSum.cs" />
