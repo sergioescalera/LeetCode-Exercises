@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace LeetCode.Input
 {
+    [DebuggerDisplay("{val}: [{left}], [{right}]")]
     public class TreeNode : ICloneable
     {
         public int val;

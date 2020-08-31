@@ -9,7 +9,7 @@ namespace LeetCode
         {
             if (root == null)
             {
-                throw new ArgumentNullException(nameof(root));
+                return null;
             }
 
             return FindAndDeleteNode(root, key);
@@ -34,7 +34,11 @@ namespace LeetCode
                     return node.left;
                 }
 
+                var max = FindMax(node.left);
 
+                max.right = node.right;
+
+                return node.left;
             }
 
             if (key > node.val)
@@ -47,6 +51,21 @@ namespace LeetCode
             }
 
             return node;
+        }
+
+        private TreeNode FindMax(TreeNode node)
+        {
+            if (node == null)
+            {
+                throw new ArgumentNullException(nameof(node));
+            }
+
+            if (node.right == null)
+            {
+                return node;
+            }
+
+            return FindMax(node.right);
         }
     }
 }
