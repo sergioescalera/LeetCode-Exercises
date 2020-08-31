@@ -141,6 +141,7 @@
     <Compile Include="Exercises\412-FizzBuzz.cs" />
     <Compile Include="Exercises\430-FlattenMultilevelDoublyLinkedList.cs" />
     <Compile Include="Exercises\435-NonOverlappingIntervals.cs" />
+    <Compile Include="Exercises\436-FindRightInterval.cs" />
     <Compile Include="Exercises\437-PathSum.cs" />
     <Compile Include="Exercises\442-FindAllDuplicatesInArray.cs" />
     <Compile Include="Exercises\520-DetectCapital.cs" />
