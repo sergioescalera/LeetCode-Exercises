@@ -105,7 +105,7 @@ namespace LeetCode.UnitTests
         {
             var sol = new ArrangingCoins();
 
-            Assert.AreEqual(65535, sol.ArrangeCoins(2147483647));
+            Assert.AreEqual(65535, sol.ArrangeCoins(int.MaxValue));
         }
     }
 }
