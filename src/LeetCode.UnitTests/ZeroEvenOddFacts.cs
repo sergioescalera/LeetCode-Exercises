@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 namespace LeetCode.UnitTests
 {
     [TestClass]
+    [TestCategory("1116. Print Zero Even Odd")]
     public class ZeroEvenOddFacts
     {
         const int timeout = 1000 * 10;
