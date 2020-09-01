@@ -52,6 +52,7 @@
     <Compile Include="DeleteNodeInBSTFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeNodeFacts.cs" />
+    <Compile Include="ZeroEvenOddFacts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

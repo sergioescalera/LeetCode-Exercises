@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LeetCode.UnitTests
 {
     [TestClass]
-    [TestCategory("450. Delete Node in a BST")]
+    [TestCategory("0450. Delete Node in a BST")]
     public class DeleteNodeInBSTFacts
     {
         [TestMethod]
