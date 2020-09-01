@@ -19,8 +19,8 @@ namespace LeetCode
 
         private int ArrangeCoins(int n, int start, int end)
         {
-            var val1 = start * (start + 1) / 2;
-            var val2 = end * (end + 1) / 2;
+            var val1 = start * (long)(start + 1) / 2;
+            var val2 = end * (long)(end + 1) / 2;
 
             if (val1 == n)
             {
@@ -43,8 +43,9 @@ namespace LeetCode
             }
 
             var middle = start + (end - start) / 2;
+            var m = middle * (long)(middle + 1) / 2;
 
-            if (middle * (middle + 1) / 2 <= n)
+            if (m <= n)
             {
                 return ArrangeCoins(n, middle, end);
             }

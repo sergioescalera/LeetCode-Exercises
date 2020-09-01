@@ -91,5 +91,21 @@ namespace LeetCode.UnitTests
             Assert.AreEqual(99, sol.ArrangeCoins(5006));
             Assert.AreEqual(99, sol.ArrangeCoins(5007));
         }
+
+        [TestMethod]
+        public void ShouldReturn496()
+        {
+            var sol = new ArrangingCoins();
+
+            Assert.AreEqual(496, sol.ArrangeCoins(123456));
+        }
+
+        [TestMethod]
+        public void ShouldReturn65535()
+        {
+            var sol = new ArrangingCoins();
+
+            Assert.AreEqual(65535, sol.ArrangeCoins(2147483647));
+        }
     }
 }
