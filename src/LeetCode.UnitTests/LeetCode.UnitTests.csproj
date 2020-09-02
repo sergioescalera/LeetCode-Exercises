@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CoinChange2Facts.cs" />
+    <Compile Include="ContainsDuplicate3Facts.cs" />
     <Compile Include="DeleteNodeInBSTFacts.cs" />
     <Compile Include="FloodFillFacts.cs" />
     <Compile Include="LargestTimeGivenDigitsFacts.cs" />
