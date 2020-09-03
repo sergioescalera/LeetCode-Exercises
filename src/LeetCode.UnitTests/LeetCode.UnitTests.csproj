@@ -55,6 +55,7 @@
     <Compile Include="FloodFillFacts.cs" />
     <Compile Include="LargestTimeGivenDigitsFacts.cs" />
     <Compile Include="LongestConsecutiveSequenceFacts.cs" />
+    <Compile Include="MakeTwoArraysEqualByReversingSubArraysFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepeatedSubstringPatternFacts.cs" />
     <Compile Include="ToeplitzMatrixFacts.cs" />
