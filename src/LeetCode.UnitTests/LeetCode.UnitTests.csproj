@@ -56,6 +56,7 @@
     <Compile Include="LargestTimeGivenDigitsFacts.cs" />
     <Compile Include="LongestConsecutiveSequenceFacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToeplitzMatrixFacts.cs" />
     <Compile Include="TreeNodeFacts.cs" />
     <Compile Include="ArrangingCoinsFacts.cs" />
     <Compile Include="ZeroEvenOddFacts.cs" />
