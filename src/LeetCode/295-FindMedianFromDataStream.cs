@@ -1,4 +1,5 @@
 ﻿using LeetCode.Data;
+using System;
 using System.Collections.Generic;
 
 namespace LeetCode
@@ -85,6 +86,11 @@ namespace LeetCode
         public double FindMedian()
         {
             return median.Value;
+        }
+
+        public int FindMedianInt()
+        {
+            return (int)Math.Floor(median.Value);
         }
     }
 }

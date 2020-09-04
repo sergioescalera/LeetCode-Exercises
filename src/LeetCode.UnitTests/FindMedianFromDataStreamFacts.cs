@@ -69,5 +69,31 @@ namespace LeetCode.UnitTests
                 Assert.AreEqual(median, finder.FindMedian(), $"index {i}");
             }
         }
+
+        [TestMethod]
+        public void Example3()
+        {
+            var finder = new MedianFinder();
+
+            finder.AddNum(5);
+
+            Assert.AreEqual(5, finder.FindMedianInt());
+
+            finder.AddNum(15);
+
+            Assert.AreEqual(10, finder.FindMedianInt());
+
+            finder.AddNum(1);
+
+            Assert.AreEqual(5, finder.FindMedianInt());
+
+            finder.AddNum(3);
+
+            Assert.AreEqual(4, finder.FindMedianInt());
+
+            finder.AddNum(13);
+
+            Assert.AreEqual(5, finder.FindMedianInt());
+        }
     }
 }
