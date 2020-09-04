@@ -52,6 +52,7 @@
     <Compile Include="CoinChange2Facts.cs" />
     <Compile Include="ContainsDuplicate3Facts.cs" />
     <Compile Include="DeleteNodeInBSTFacts.cs" />
+    <Compile Include="FindMedianFromDataStreamFacts.cs" />
     <Compile Include="FloodFillFacts.cs" />
     <Compile Include="LargestTimeGivenDigitsFacts.cs" />
     <Compile Include="LongestConsecutiveSequenceFacts.cs" />
