@@ -69,6 +69,32 @@ namespace LeetCode
             return partitions;
         }
 
+        public IList<int> PartitionLabels_O_n(string str)
+        {
+            var last = new int[26];
+            for (int i = 0; i < str.Length; ++i)
+            {
+                last[str[i] - 'a'] = i;
+            }
+
+            var j = 0;
+            var anchor = 0;
+            var ans = new List<int>();
+
+            for (int i = 0; i < str.Length; ++i)
+            {
+                j = Math.Max(j, last[str[i] - 'a']);
+
+                if (i == j)
+                {
+                    ans.Add(i - anchor + 1);
+                    anchor = i + 1;
+                }
+            }
+
+            return ans;
+        }
+
         [DebuggerDisplay("[{start} - {end}]")]
         class Interval : IComparable<Interval>
         {
