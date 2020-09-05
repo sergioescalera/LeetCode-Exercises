@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="206-ReverseLinkedListFacts.cs" />
+    <Compile Include="AllElementsTwoBSTFacts.cs" />
     <Compile Include="CoinChange2Facts.cs" />
     <Compile Include="ContainsDuplicate3Facts.cs" />
     <Compile Include="DeleteNodeInBSTFacts.cs" />
