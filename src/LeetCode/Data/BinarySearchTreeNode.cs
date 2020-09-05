@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Data
 {
@@ -87,6 +88,74 @@ namespace LeetCode.Data
             {
                 return Right != null && Right.Find(value);
             }
+        }
+
+        public virtual IEnumerable<T> InOrder()
+        {
+            var left = Left?.InOrder() ?? Enumerable.Empty<T>();
+
+            var right = Right?.InOrder() ?? Enumerable.Empty<T>();
+
+            foreach (var item in left)
+            {
+                yield return item;
+            }
+
+            yield return Value;
+
+            foreach (var item in right)
+            {
+                yield return item;
+            }
+
+            yield break;
+        }
+
+        public virtual IEnumerable<T> PreOrder()
+        {
+            var left = Left?.InOrder() ?? Enumerable.Empty<T>();
+
+            var right = Right?.InOrder() ?? Enumerable.Empty<T>();
+
+            yield return Value;
+
+            foreach (var item in left)
+            {
+                yield return item;
+            }
+
+            foreach (var item in right)
+            {
+                yield return item;
+            }
+
+            yield break;
+        }
+
+        public virtual IEnumerable<T> PostOrder()
+        {
+            var left = Left?.InOrder() ?? Enumerable.Empty<T>();
+
+            var right = Right?.InOrder() ?? Enumerable.Empty<T>();
+
+            foreach (var item in left)
+            {
+                yield return item;
+            }
+
+            foreach (var item in right)
+            {
+                yield return item;
+            }
+
+            yield return Value;
+
+            yield break;
+        }
+
+        public override string ToString()
+        {
+            return String.Join(", ", InOrder());
         }
     }
 }
