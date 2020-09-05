@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HeapFacts.cs" />
     <Compile Include="ReverseLinkedListFacts.cs" />
     <Compile Include="AllElementsTwoBSTFacts.cs" />
     <Compile Include="CoinChange2Facts.cs" />

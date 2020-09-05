@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LeetCode.UnitTests
 {
     [TestClass]
-    [TestCategory("Input")]
+    [TestCategory("Data - TreeNode")]
     public class TreeNodeFacts
     {
         [TestMethod]

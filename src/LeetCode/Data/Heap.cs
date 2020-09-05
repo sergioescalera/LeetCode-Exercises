@@ -6,7 +6,6 @@ namespace LeetCode.Data
 {
     public class Heap<T>
     {
-        private int _size;
         private T[] _items;
         private IComparer<T> _comparer;
 
@@ -31,9 +30,9 @@ namespace LeetCode.Data
 
             EnsureExtraCapacity();
 
-            _items[_size] = item;
+            _items[Size] = item;
 
-            _size++;
+            Size++;
 
             HeapifyUp();
         }
@@ -51,20 +50,24 @@ namespace LeetCode.Data
 
             var item = _items[0];
 
-            _items[0] = _items[_size - 1];
+            _items[0] = _items[Size - 1];
 
-            _size--;
+            Size--;
 
             HeapifyDown();
 
             return item;
         }
 
+        public int Capacity { get => _items.Length; }
+
+        public int Size { get; private set; }
+
         #region Helpers
 
         private void EnsureNotEmpty()
         {
-            if (_size == 0)
+            if (Size == 0)
             {
                 throw new InvalidOperationException();
             }
@@ -72,7 +75,7 @@ namespace LeetCode.Data
 
         private void EnsureExtraCapacity()
         {
-            if (_size < _items.Length)
+            if (Size < _items.Length)
             {
                 return;
             }
@@ -86,7 +89,7 @@ namespace LeetCode.Data
 
         private void HeapifyUp()
         {
-            var index = _size - 1;
+            var index = Size - 1;
 
             while (HasParent(index) && _comparer.Compare(Parent(index), _items[index]) > 0)
             {
@@ -134,11 +137,11 @@ namespace LeetCode.Data
 
         private int GetRightChildIndex(int parentIndex) => 2 * parentIndex + 2;
 
-        private int GetParentIndex(int parentIndex) => 2 * parentIndex + 1;
+        private int GetParentIndex(int childIndex) => (childIndex - 1) / 2;
 
-        private bool HasLeftChild(int index) => GetLeftChildIndex(index) < _size;
+        private bool HasLeftChild(int index) => GetLeftChildIndex(index) < Size;
 
-        private bool HastRightChild(int index) => GetRightChildIndex(index) < _size;
+        private bool HastRightChild(int index) => GetRightChildIndex(index) < Size;
 
         private bool HasParent(int index) => GetParentIndex(index) >= 0;
 
