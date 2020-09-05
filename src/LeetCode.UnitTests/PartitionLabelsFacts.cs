@@ -47,7 +47,7 @@ namespace LeetCode.UnitTests
 
             CollectionAssert.AreEquivalent(
                 new int[] { 9, 7, 8 },
-                sol.partitionLabels("ababcbacadefegdehijhklij").ToList());
+                sol.PartitionLabels_O_n("ababcbacadefegdehijhklij").ToList());
         }
     }
 }
