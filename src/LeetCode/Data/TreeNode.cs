@@ -27,8 +27,8 @@ namespace LeetCode.Data
         {
             return obj is TreeNode t
                 && t.val == val
-                && ((right == null && t.right == null || right.Equals(t.right)))
-                && ((left == null && t.left == null || left.Equals(t.left)));
+                && ((right == null && t.right == null) || (right != null && t.right != null && right.Equals(t.right)))
+                && ((left == null && t.left == null) || (left != null && t.left != null &&  left.Equals(t.left)));
         }
 
         public override int GetHashCode()
