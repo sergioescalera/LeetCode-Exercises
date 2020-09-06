@@ -2,7 +2,7 @@
 
 namespace LeetCode.Data
 {
-    public class TreeNode
+    public class TreeNode : ICloneable
     {
         public int val;
         public TreeNode left;
@@ -13,6 +13,27 @@ namespace LeetCode.Data
             this.val = val;
             this.left = left;
             this.right = right;
+        }
+
+        public virtual object Clone()
+        {
+            return new TreeNode(
+                val,
+                left?.Clone() as TreeNode,
+                right?.Clone() as TreeNode);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is TreeNode t
+                && t.val == val
+                && ((right == null && t.right == null || right.Equals(t.right)))
+                && ((left == null && t.left == null || left.Equals(t.left)));
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public void PrintPretty(String indent = "", Boolean last = true)

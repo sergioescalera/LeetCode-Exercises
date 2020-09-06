@@ -1,5 +1,5 @@
 ﻿using System;
-using LeetCode.Input;
+using LeetCode.Data;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LeetCode.UnitTests
