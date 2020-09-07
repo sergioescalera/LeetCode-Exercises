@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Data\HeapFacts.cs" />
     <Compile Include="ImageOverlapFacts.cs" />
+    <Compile Include="LinkedListCycleFacts.cs" />
     <Compile Include="ReverseLinkedListFacts.cs" />
     <Compile Include="AllElementsTwoBSTFacts.cs" />
     <Compile Include="CoinChange2Facts.cs" />
