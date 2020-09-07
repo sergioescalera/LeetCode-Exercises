@@ -67,6 +67,7 @@
     <Compile Include="ToeplitzMatrixFacts.cs" />
     <Compile Include="Data\TreeNodeFacts.cs" />
     <Compile Include="ArrangingCoinsFacts.cs" />
+    <Compile Include="WordPatternFacts.cs" />
     <Compile Include="ZeroEvenOddFacts.cs" />
   </ItemGroup>
   <ItemGroup>
