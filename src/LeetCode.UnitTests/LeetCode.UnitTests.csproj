@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompareVersionNumbersFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
     <Compile Include="ImageOverlapFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
