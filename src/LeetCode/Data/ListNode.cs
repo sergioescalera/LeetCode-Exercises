@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace LeetCode.Data
 {
@@ -13,6 +14,26 @@ namespace LeetCode.Data
         {
             this.val = val;
             this.next = next;
+        }
+
+        public ListNode(String str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                return;
+            }
+
+            var numbers = str
+                .Split(new[] { ' ', ',', ';' }, StringSplitOptions.RemoveEmptyEntries)
+                .Select(s => int.Parse(s))
+                .ToArray();
+
+            val = numbers.FirstOrDefault();
+
+            if (numbers.Skip(1).Any())
+            {
+                next = new ListNode(string.Join(", ", numbers.Skip(1)));
+            }
         }
 
         public void PrintPretty()
@@ -50,7 +71,22 @@ namespace LeetCode.Data
                 return val.ToString();
             }
 
-            return $"{val}, {next}";
+            return $"{val}, {next.ToString(1)}";
+        }
+
+        private String ToString(int depth, int maxDepth = 10)
+        {
+            if (depth > maxDepth && next != null)
+            {
+                return $"{val}...";
+            }
+
+            if (next == null)
+            {
+                return val.ToString();
+            }
+
+            return $"{val}, {next.ToString(depth + 1, maxDepth)}";
         }
     }
 }
