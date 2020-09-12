@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BullsAndCowsFacts.cs" />
+    <Compile Include="CoinChangeFacts.cs" />
     <Compile Include="CombinationSumIIIFacts.cs" />
     <Compile Include="CompareVersionNumbersFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
