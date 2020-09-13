@@ -55,6 +55,7 @@
     <Compile Include="CompareVersionNumbersFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
     <Compile Include="ImageOverlapFacts.cs" />
+    <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />
