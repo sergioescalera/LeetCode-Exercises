@@ -54,6 +54,7 @@
     <Compile Include="CombinationSumIIIFacts.cs" />
     <Compile Include="CompareVersionNumbersFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
+    <Compile Include="HouseRobberFacts.cs" />
     <Compile Include="ImageOverlapFacts.cs" />
     <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
