@@ -1,5 +1,6 @@
 ﻿using LeetCode.Data;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,73 +20,56 @@ namespace LeetCode
                 return 0;
             }
 
-            var maxNum = nums.Max();
-            var maxNumBin = ToBinary(maxNum);
-
-            var trie = new Trie<char>();
-            var numbers = new List<char[]>(nums.Length);
+            var n = nums.Max();
+            var k = n >= Math.Pow(2, 16) ? 32 : n >= Math.Pow(2, 8) ? 16 : 8;
+            var trie = new Trie<bool>();
             var max = int.MinValue;
-            var index = 0;
-
+            
             foreach (var num in nums)
             {
-                if (num < 0)
-                {
-                    throw new InvalidOperationException(
-                        $"Negative numbers are not supported nums[{index}]={num}.");
-                }
+                var bin = new IntBinary(num, k);
 
-                var bin = ToBinary(num)
-                    .PadLeft(maxNumBin.Length, '0')
-                    .ToArray();
-
-                trie.Add(bin);
-
-                numbers.Add(bin);
-
-                index++;
-            }
-
-            foreach (var binary in numbers)
-            {
-                var numMax = GetMax(trie.Nodes, binary);
+                var numMax = GetMax(trie.Nodes, bin, 0);
 
                 if (numMax > max)
                 {
                     max = numMax;
                 }
+
+                trie.Add(bin);
             }
 
             return max;
         }
-
-        private string ToBinary(int num)
-        {
-            return Convert.ToString(num, 2);
-        }
-
+        
         private int GetMax(
-            SortedDictionary<char, TrieNode<char>> nodes,
-            char[] num, 
-            int index = 0)
+            SortedDictionary<bool, TrieNode<bool>> nodes,
+            IntBinary num, 
+            int index)
         {
-            if (index >= num.Length)
+            if (index >= num.Count)
             {
                 return 0;
             }
 
             var bit = num[index];
 
-            var notBit = bit == '0' ? '1' : '0';
+            var notBit = !bit;
 
             if (nodes.ContainsKey(notBit))
             {
-                var bitValue = Convert.ToInt32(Math.Pow(2, num.Length - index - 1));
+                var bitValue = Convert.ToInt32(Math.Pow(2, num.Count - index - 1));
 
-                return bitValue + GetMax(nodes[notBit].Children, num, index + 1);
+                return bitValue 
+                    + GetMax(nodes[notBit].Children, num, index + 1);
             }
 
-            return GetMax(nodes[bit].Children, num, index + 1);
+            if (nodes.ContainsKey(bit))
+            {
+                return GetMax(nodes[bit].Children, num, index + 1);
+            }
+
+            return 0;
         }
 
         public int FindMaximumXOR_N2(int[] nums)
