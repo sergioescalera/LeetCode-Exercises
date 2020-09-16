@@ -61,6 +61,7 @@
     <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
+    <Compile Include="MaxXOROfTwoNumbersFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />
     <Compile Include="PermutationInStringFacts.cs" />
     <Compile Include="ReverseLinkedListFacts.cs" />

@@ -4,14 +4,23 @@ using System.Diagnostics;
 
 namespace LeetCode.Data
 {
-    [DebuggerDisplay("{value}: children {children.Count}")]
+    [DebuggerDisplay("{Value}: children {children.Count}")]
     public class TrieNode<T>
     {
-        protected readonly SortedDictionary<T, TrieNode<T>> children;
+        public SortedDictionary<T, TrieNode<T>> Children
+        {
+            get;
+        }
 
-        protected readonly T value;
+        public Boolean IsCompleteWord
+        {
+            get; private set;
+        }
 
-        protected Boolean IsCompleteWord { get; private set; }
+        public T Value
+        {
+            get;
+        }
 
         public TrieNode(T val)
         {
@@ -20,9 +29,9 @@ namespace LeetCode.Data
                 throw new ArgumentNullException(nameof(val));
             }
             
-            children = new SortedDictionary<T, TrieNode<T>>();
+            Children = new SortedDictionary<T, TrieNode<T>>();
 
-            value = val;
+            Value = val;
         }
         
         public virtual void Add(IList<T> word, int index)
@@ -46,12 +55,12 @@ namespace LeetCode.Data
 
             var letter = word[index];
 
-            if (children.ContainsKey(letter) == false)
+            if (Children.ContainsKey(letter) == false)
             {
-                children.Add(letter, new TrieNode<T>(letter));
+                Children.Add(letter, new TrieNode<T>(letter));
             }
 
-            children[letter].Add(word, index + 1);
+            Children[letter].Add(word, index + 1);
         }
 
         public virtual Boolean Contains(IList<T> word, int index)
@@ -73,12 +82,12 @@ namespace LeetCode.Data
 
             var letter = word[index];
 
-            if (children.ContainsKey(letter) == false)
+            if (Children.ContainsKey(letter) == false)
             {
                 return false;
             }
 
-            return children[letter].Contains(word, index + 1);
+            return Children[letter].Contains(word, index + 1);
         }
     }
 }
