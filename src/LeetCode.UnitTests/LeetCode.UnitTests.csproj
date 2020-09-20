@@ -80,6 +80,7 @@
     <Compile Include="ReverseLinkedListIIFacts.cs" />
     <Compile Include="RobotBoundedInCircleFacts.cs" />
     <Compile Include="RotateArrayFacts.cs" />
+    <Compile Include="SequentialDigitsFacts.cs" />
     <Compile Include="ToeplitzMatrixFacts.cs" />
     <Compile Include="Data\TreeNodeFacts.cs" />
     <Compile Include="ArrangingCoinsFacts.cs" />
