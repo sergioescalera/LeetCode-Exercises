@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BullsAndCowsFacts.cs" />
+    <Compile Include="CarPoolingFacts.cs" />
     <Compile Include="CoinChangeFacts.cs" />
     <Compile Include="CombinationSumIIIFacts.cs" />
     <Compile Include="CompareVersionNumbersFacts.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="ImageOverlapFacts.cs" />
     <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
+    <Compile Include="MajorityElementFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
     <Compile Include="MaxXOROfTwoNumbersFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />
