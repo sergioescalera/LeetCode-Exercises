@@ -61,6 +61,7 @@
     <Compile Include="HouseRobberFacts.cs" />
     <Compile Include="ImageOverlapFacts.cs" />
     <Compile Include="InsertIntervalFacts.cs" />
+    <Compile Include="LargestNumberFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
     <Compile Include="MajorityElementFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
