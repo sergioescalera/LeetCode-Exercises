@@ -49,6 +49,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0188-BestTimeToBuyAndSellStockIV.cs" />
+    <Compile Include="BestTimeToBuyAndSellStockIVFacts.cs" />
+    <Compile Include="BestTimeToBuyAndSellStockIIIFacts.cs" />
     <Compile Include="BullsAndCowsFacts.cs" />
     <Compile Include="CarPoolingFacts.cs" />
     <Compile Include="CoinChangeFacts.cs" />
