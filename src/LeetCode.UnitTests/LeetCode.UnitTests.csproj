@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="0188-BestTimeToBuyAndSellStockIV.cs" />
+    <Compile Include="BasicCalculatorIIFacts.cs" />
     <Compile Include="BestTimeToBuyAndSellStockIVFacts.cs" />
     <Compile Include="BestTimeToBuyAndSellStockIIIFacts.cs" />
     <Compile Include="BullsAndCowsFacts.cs" />
