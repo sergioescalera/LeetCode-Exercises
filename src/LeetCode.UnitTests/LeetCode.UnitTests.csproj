@@ -49,7 +49,6 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="0188-BestTimeToBuyAndSellStockIV.cs" />
     <Compile Include="BasicCalculatorIIFacts.cs" />
     <Compile Include="BestTimeToBuyAndSellStockIVFacts.cs" />
     <Compile Include="BestTimeToBuyAndSellStockIIIFacts.cs" />
@@ -70,6 +69,7 @@
     <Compile Include="LargestNumberFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
     <Compile Include="MajorityElementFacts.cs" />
+    <Compile Include="MaximumNumberEatenApplesFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
     <Compile Include="MaxXOROfTwoNumbersFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />

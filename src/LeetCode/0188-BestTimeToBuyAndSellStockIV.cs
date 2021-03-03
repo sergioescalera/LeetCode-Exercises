@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.UnitTests
+namespace LeetCode
 {
     public class BestTimeToBuyAndSellStockIV
     {
