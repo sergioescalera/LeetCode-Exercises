@@ -74,6 +74,7 @@
     <Compile Include="MaximumProductSubarrayFacts.cs" />
     <Compile Include="MaxXOROfTwoNumbersFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />
+    <Compile Include="PacificAtlanticWaterFlowFacts.cs" />
     <Compile Include="PermutationInStringFacts.cs" />
     <Compile Include="ReconstructItineraryFacts.cs" />
     <Compile Include="ReverseLinkedListFacts.cs" />
