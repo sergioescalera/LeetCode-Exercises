@@ -57,6 +57,7 @@
     <Compile Include="CoinChangeFacts.cs" />
     <Compile Include="CombinationSumIIIFacts.cs" />
     <Compile Include="CompareVersionNumbersFacts.cs" />
+    <Compile Include="ContinuousSubarraySumSolutionFacts.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
     <Compile Include="Data\TrieFacts.cs" />
