@@ -63,6 +63,7 @@
     <Compile Include="Data\TrieFacts.cs" />
     <Compile Include="EvaluateDivisionFacts.cs" />
     <Compile Include="FlipBinaryTreeToMatchPreorderTraversalFacts.cs" />
+    <Compile Include="FractionToRecurringDecimalFacts.cs" />
     <Compile Include="GasStationFacts.cs" />
     <Compile Include="HouseRobber2Facts.cs" />
     <Compile Include="HouseRobberFacts.cs" />
