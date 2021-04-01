@@ -96,6 +96,7 @@
     <Compile Include="RotateArrayFacts.cs" />
     <Compile Include="SequentialDigitsFacts.cs" />
     <Compile Include="SmallestSubsequenceDistinctCharsFacts.cs" />
+    <Compile Include="StampingTheSequenceFacts.cs" />
     <Compile Include="SubarrayProductLessThanKFacts.cs" />
     <Compile Include="ToeplitzMatrixFacts.cs" />
     <Compile Include="Data\TreeNodeFacts.cs" />
