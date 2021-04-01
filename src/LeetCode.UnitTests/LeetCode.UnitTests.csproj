@@ -75,6 +75,7 @@
     <Compile Include="MaximumNumberEatenApplesFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
     <Compile Include="MaxXOROfTwoNumbersFacts.cs" />
+    <Compile Include="MyLinkedListFacts.cs" />
     <Compile Include="OddEvenLinkedListFacts.cs" />
     <Compile Include="PacificAtlanticWaterFlowFacts.cs" />
     <Compile Include="PermutationInStringFacts.cs" />
