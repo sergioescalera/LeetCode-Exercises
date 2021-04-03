@@ -71,6 +71,7 @@
     <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LargestNumberFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
+    <Compile Include="LRUCacheFacts.cs" />
     <Compile Include="MajorityElementFacts.cs" />
     <Compile Include="MaximumNumberEatenApplesFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
