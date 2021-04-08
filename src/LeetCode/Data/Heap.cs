@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace LeetCode.Data
@@ -137,7 +136,7 @@ namespace LeetCode.Data
 
         private int GetRightChildIndex(int parentIndex) => 2 * parentIndex + 2;
 
-        private int GetParentIndex(int childIndex) => (childIndex - 1) / 2;
+        private int GetParentIndex(int childIndex) => childIndex <= 0 ? -1 : (childIndex - 1) / 2;
 
         private bool HasLeftChild(int index) => GetLeftChildIndex(index) < Size;
 
