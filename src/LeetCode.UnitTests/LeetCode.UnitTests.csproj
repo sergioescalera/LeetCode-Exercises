@@ -60,6 +60,7 @@
     <Compile Include="ContinuousSubarraySumSolutionFacts.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeFacts.cs" />
     <Compile Include="Data\HeapFacts.cs" />
+    <Compile Include="Data\LFUCacheFacts.cs" />
     <Compile Include="Data\TrieFacts.cs" />
     <Compile Include="EvaluateDivisionFacts.cs" />
     <Compile Include="FlipBinaryTreeToMatchPreorderTraversalFacts.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="InsertIntervalFacts.cs" />
     <Compile Include="LargestNumberFacts.cs" />
     <Compile Include="LinkedListCycleFacts.cs" />
-    <Compile Include="LRUCacheFacts.cs" />
+    <Compile Include="Data\LRUCacheFacts.cs" />
     <Compile Include="MajorityElementFacts.cs" />
     <Compile Include="MaximumNumberEatenApplesFacts.cs" />
     <Compile Include="MaximumProductSubarrayFacts.cs" />
